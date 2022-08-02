@@ -18,7 +18,7 @@ The package is very simple to use. See exemples below.
 ### First, get data on count locations
 ```r
 equipamentos <- get_PNCT_sites(year="all",
-						                   geo = FALSE) # TRUE to output a sf object (spatial object)
+			       geo = FALSE) # TRUE to output a sf object (spatial object)
 ```
 Function outputs a data frame or sf object regarding PNCT count locations, with information on location, highway, geographic coordinates and available data. 
 Attribute "idEquipamento" is the id variable that will be used in the following functions. Also, you should verify, for the desired count location(s), which years have count data.
