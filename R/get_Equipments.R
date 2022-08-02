@@ -33,13 +33,13 @@ get_PNCT_sites <- function(year = "all", geo = FALSE){
   
   equipamentosPNCT_df <- tidyr::unnest(equipamentosPNCT,mesesVmdm)
   
-  equipamentosPNCT_df <- equipamentosPNCT_df %>% pivot_wider(names_from = ano,names_prefix = "obs_",names_sort = T, values_from = meses)
+  equipamentosPNCT_df <- equipamentosPNCT_df %>% tidyr::pivot_wider(names_from = ano,names_prefix = "obs_",names_sort = T, values_from = meses)
   
   # Output
   
   if(GEO==TRUE){
   
-  equipamentosGEO <- equipamentosPNCT_df %>%  st_as_sf(.,coords = c("longitude","latitude"),crs=4326)
+  equipamentosGEO <- sf::st_as_sf(equipamentosPNCT_df,coords = c("longitude","latitude"),crs=4326)
   
   return(equipamentosGEO)
   
