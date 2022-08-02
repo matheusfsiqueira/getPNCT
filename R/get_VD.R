@@ -6,8 +6,8 @@
 #' @param year traffic data for a given year. Input "all" for all available data (default), or one of the following years: 2014,2015,2016,2017,2018,2019 or 2021.
 #' @return Returns a data frame with traffic volume data for a given count location
 #' @examples 
-#' temp1 <- get_dailyVolumes(id = 414,year="all")
-#' temp2 <- get_dailyVolumes(id = 414,year=2018)
+#' temp1 <- get_VD(id = 414,year="all")
+#' temp2 <- get_VD(id = 414,year=2018)
 #' @export
 #' 
 

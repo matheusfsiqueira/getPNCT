@@ -18,6 +18,6 @@ Returns a data frame with traffic volume data for a given count location
 Gathers information on Daily Traffic Volumes (in portuguese, Volumes Diários) for a given count location using the DNIT Web API.
 }
 \examples{
-temp1 <- get_dailyVolumes(id = 414,year="all")
-temp2 <- get_dailyVolumes(id = 414,year=2018)
+temp1 <- get_VD(id = 414,year="all")
+temp2 <- get_VD(id = 414,year=2018)
 }
