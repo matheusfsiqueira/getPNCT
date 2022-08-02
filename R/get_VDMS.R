@@ -12,11 +12,9 @@
 #' 
 
 
-get_VDMS <- function(id,year="all"){
+get_VDMS <- function(id,year){
   
   url <- "http://servicos.dnit.gov.br/dadospnct/api/Vmds/"
-  
-  year <- ifelse(year=="all","",year)
   
   vdms <- jsonlite::fromJSON(paste0(url,id,"?ano=",year),
                    simplifyDataFrame = T)[["dado"]]
