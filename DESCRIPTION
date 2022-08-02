@@ -1,0 +1,16 @@
+Package: getPNCT
+Title: Download PNCT traffic data from DNIT
+Version: 0.0.1
+Authors@R: 
+    person("Matheus", "Siqueira", , "matheusfsiqueira@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3341-0527"))
+Description: getPNCT is an R wrapper for getting traffic data and other information from the PNCT Web API. It allows you to easily retrieve information on count sites, Annual Traffic, Monthly Traffic and Hourly Traffic.
+License: use_gpl3_license()
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Imports: 
+    magrittr,
+	dplyr,
+	jsonlite,
+	sf
