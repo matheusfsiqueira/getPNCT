@@ -37,7 +37,7 @@ get_PNCT_sites <- function(year = "all", geo = FALSE){
   
   # Output
   
-  if(GEO==TRUE){
+  if(geo==TRUE){
   
   equipamentosGEO <- sf::st_as_sf(equipamentosPNCT_df,coords = c("longitude","latitude"),crs=4326)
   
