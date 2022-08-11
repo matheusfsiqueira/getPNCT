@@ -9,6 +9,7 @@ O website do PNCT [(aqui)](http://servicos.dnit.gov.br/dadospnct/ContagemContinu
 
 ## Installation in R
 ``` R
+# install.packages("devtools")
 devtools::install_github("matheusfsiqueira/getPNCT")
   library(getPNCT)
 ```
