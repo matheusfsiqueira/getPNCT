@@ -89,7 +89,7 @@ process <- get_seasonal_factor(id = 414,
 Output is a data frame contaning seasonal factors for the equipment selected using "id".
 
 ## Notes
-Output traffic data is usually segmented by vehicle types, using PNCT codes:
+- Output traffic data is usually segmented by vehicle types, using PNCT codes:
 | Código/Code | Tipo de Veículo | Vehicle Type |
 |--|--|--|
 | A | Ônibus/Cam de 2 eixos | Buses/2-Axle Trucks |
@@ -104,3 +104,4 @@ Output traffic data is usually segmented by vehicle types, using PNCT codes:
 | J | Moto | Motorcycle |
 | L | Outros | Other |
 
+- Weekdays in function `get_VDMD` are coded as 1 = sunday (domingo) and 7 = saturday (sábado)
