@@ -90,6 +90,7 @@ Output is a data frame contaning seasonal factors for the equipment selected usi
 
 ## Notes
 - Output traffic data is usually segmented by vehicle types, using PNCT codes:
+
 | Código/Code | Tipo de Veículo | Vehicle Type |
 |--|--|--|
 | A | Ônibus/Cam de 2 eixos | Buses/2-Axle Trucks |
